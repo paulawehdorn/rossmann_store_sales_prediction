@@ -3,7 +3,7 @@
 ## 1. Sobre o Projeto
 Este é um projeto fictício, com o objetivo de desenvolver e demonstrar conhecimento nos estudos de Machine Learning, especificamente na criação de modelo de previsão de vendas.
 Utilizaremos:
-- Dados disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales);
+- Dados disponíveis no <a href="https://www.kaggle.com/c/rossmann-store-sales" target="_blank">Kaggle</a>.
 - Método CRISP-DM, seguindo os 11 passos descritos na [seção 6](#planejamento-da-solução).
 
 ## 2. Tecnologias Utilizadas
