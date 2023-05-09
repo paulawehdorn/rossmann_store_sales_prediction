@@ -4,7 +4,7 @@
 Este é um projeto fictício, com o objetivo de desenvolver e demonstrar conhecimento nos estudos de Machine Learning, especificamente na criação de modelo de previsão de vendas.
 Utilizaremos:
 - Dados disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales);
-- Método CRISP-DS, seguindo os 11 passos descritos na [seção 6](#planejamento-da-solução).
+- Método CRISP-DM, seguindo os 11 passos descritos na [seção 6](#planejamento-da-solução).
 
 ## 2. Tecnologias Utilizadas
 Python, Pandas, NumPy, Heroku, XGBoost, Seaborn, Boruta, Matplotlib, Flask, Telegram, Scikit-Learn, Jupyter Notebook
@@ -37,8 +37,20 @@ state_holiday | indica um feriado estadual.
 school_holiday | indica se a loja foi afetada pelo fechamento das escolas públicas
 
 ## 5. Problema de Negócio
+Com o intuito de reformar as lojas da Rossmann, o CFO solicitou uma previsão de vendas para as próximas seis semanas, a fim de investir parte do lucro no orçamento destinado às reformas.
 
 ## 6. Planejamento da Solução <a id="planejamento-da-solução"></a>
+
+O método CRISP-DM (Cross Industry Standard Process for Data Mining) é uma metodologia amplamente utilizada em projetos de Data Science e Mineração de Dados. Ele ajuda a organizar as etapas do projeto desde a definição do problema até a implementação da solução. Ele é útil porque fornece uma estrutura clara para o trabalho e ajuda a garantir que nenhuma etapa importante seja ignorada ou negligenciada. Além disso, o CRISP-DM ajuda a manter o foco no problema real que se pretende resolver, permitindo que o projeto seja mais eficiente e eficaz.
+
+O CRISP-DM é composto por 6 fases principais: 
+
+1. Entendimento do problema;
+2. Entendimento dos dados;
+3. Preparação dos dados;
+4. Modelagem;
+5. Avaliação do modelo;
+6. Deploy.
 
 ## 7. Performance do Modelo
 
