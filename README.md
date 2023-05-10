@@ -1,24 +1,23 @@
 # Previsão de vendas das lojas Rossmann
 
-## 1. Desafio
-A Rossmann opera mais de 3.000 drogarias em 7 países europeus. Atualmente, o CFO solicitou aos gerentes de cada loja a tarefa de prever suas vendas diárias com até seis semanas de antecedência. As vendas da loja são influenciadas por muitos fatores, incluindo promoções, concorrência, feriados escolares e estaduais, sazonalidade e localidade. Com milhares de gerentes individuais prevendo vendas com base em suas circunstâncias únicas, a precisão dos resultados pode variar bastante.
+## 1. Sobre o Projeto
+**Desafio:**
+- A Rossmann opera mais de 3.000 drogarias em 7 países europeus. Atualmente, o CFO solicitou aos gerentes de cada loja a tarefa de prever suas vendas diárias com até seis semanas de antecedência. As vendas da loja são influenciadas por muitos fatores, incluindo promoções, concorrência, feriados escolares e estaduais, sazonalidade e localidade. Com milhares de gerentes individuais prevendo vendas com base em suas circunstâncias únicas, a precisão dos resultados pode variar bastante.
+- Com o intuito de reformar as lojas Rossmann, o CFO precisa da previsão de vendas diárias das próximas seis semanas para investir parte do lucro no orçamento destinado às reformas. 
 
-Com o intuito de reformar as lojas Rossmann, o CFO precisa da previsão de vendas diárias das próximas seis semanas para investir parte do lucro no orçamento destinado às reformas. 
-
-## 2. Sobre o Projeto
 **Utilizaremos:**
 - Dados públicos, disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales).
-- Método CRISP-DM, seguindo os passos descritos na [seção 6](#planejamento-da-solução).
+- Método CRISP-DM, seguindo os passos descritos na [seção 5](#planejamento-da-solução).
 
 **Observação:** 
 * Este é um projeto fictício, com o objetivo de desenvolver e demonstrar conhecimento nos estudos de Machine Learning, especificamente na criação de modelo de previsão de vendas.
 
-## 3. Contato
+## 2. Contato
 - paulawehdorn@gmail.com
-- [LinkedIn](https://www.linkedin.com/in/paulawehdorn/)
 - [Portfólio](https://paulawehdorn.github.io/portfolio_projetos/)
+- [LinkedIn](https://www.linkedin.com/in/paulawehdorn/)
 
-## 4. Tecnologias Utilizadas
+## 3. Tecnologias Utilizadas
 - Python, Pandas, Numpy, Matplotlib, Seaborn, Scikit-Learn;
 - Jupyter Notebook;
 - XGBoost Classifier;
@@ -26,7 +25,7 @@ Com o intuito de reformar as lojas Rossmann, o CFO precisa da previsão de venda
 - CRISP-DM;
 - Git e Github.
 
-## 5. Atributos
+## 4. Atributos
 ATRIBUTO | DESCRIÇÃO 
 -- | -- 
 store | um ID único para cada loja
@@ -48,11 +47,11 @@ promo | indica se uma loja está realizando uma promoção naquele dia
 state_holiday | indica um feriado estadual.
 school_holiday | indica se a loja foi afetada pelo fechamento das escolas públicas
 
-## 6. Planejamento da Solução <a id="planejamento-da-solução"></a>
+## 5. Planejamento da Solução <a id="planejamento-da-solução"></a>
 
 Utilizaremos o método CRISP-DM, pois ele ajuda a organizar as etapas do projeto desde a definição do problema até a implementação da solução.
 
-* As 6 fases principais do CRISP-DM são: 
+#### As 6 fases principais do CRISP-DM são: 
 
 1. Entendimento do problema;
 2. Entendimento dos dados;
@@ -61,7 +60,7 @@ Utilizaremos o método CRISP-DM, pois ele ajuda a organizar as etapas do projeto
 5. Avaliação do modelo;
 6. Deploy.
 
-* Dentro do projeto, vamos quebrá-las em 9 passos:
+#### Dentro do projeto, vamos quebrá-las em 9 passos:
 
 1. Passo 01: Descrição dos dados;
 2. Passo 02: Feature engineering;
@@ -73,12 +72,12 @@ Utilizaremos o método CRISP-DM, pois ele ajuda a organizar as etapas do projeto
 8. Passo 08: Hyperparameter fine tuning;
 9. Passo 09: Error translation and interpretation.
 
-## 7. Performance do Modelo
+## 6. Performance do Modelo
 
-## 8. Deploy do Modelo
+## 7. Deploy do Modelo
 
-## 9. Impacto Financeiro
+## 8. Impacto Financeiro
 
-## 10. Conclusão
+## 9. Conclusão
 
-## 11. Possíveis Melhorias
+## 10. Possíveis Melhorias
