@@ -1,83 +1,44 @@
-# Previsão de vendas das lojas Rossmann
+# Sales Forecasting Project - Rossmann Store Sales
+![rossmann_cover](https://github.com/paulawehdorn/rossmann_store_sales_prediction/assets/37786319/3c57a302-39a1-47bc-bc94-a19d7d5f646f)
 
-## 1. Sobre o Projeto
-**Desafio:**
-- A Rossmann opera mais de 3.000 drogarias em 7 países europeus. Atualmente, o CFO solicitou aos gerentes de cada loja a tarefa de prever suas vendas diárias com até seis semanas de antecedência. As vendas da loja são influenciadas por muitos fatores, incluindo promoções, concorrência, feriados escolares e estaduais, sazonalidade e localidade. Com milhares de gerentes individuais prevendo vendas com base em suas circunstâncias únicas, a precisão dos resultados pode variar bastante.
-- Com o intuito de reformar as lojas Rossmann, o CFO precisa da previsão de vendas diárias das próximas seis semanas para investir parte do lucro no orçamento destinado às reformas. 
+## 1. Descrição
+Este é um projeto end-to-end com o objetivo de prever vendas para as próximas seis semanas de todas as lojas da rede de farmácias Rossmann, utilizando técnicas de análise de dados e machine learning.
 
-**Utilizaremos:**
-- Dados públicos, disponíveis no [Kaggle](https://www.kaggle.com/c/rossmann-store-sales).
-- Método CRISP-DM, seguindo os passos descritos na [seção 5](#planejamento-da-solução).
+## 2. Entendimento do negócio
+### 2.1. Contexto
+A Rossmann é uma rede de drogarias com origem alemã. Com mais de 3.000 lojas em sete países europeus, ela é uma das maiores redes de drogarias na Europa. A empresa vende uma variedade de produtos, incluindo itens de cuidados pessoais, produtos de beleza, produtos para o lar, alimentos e bebidas, entre outros. A Rossmann é conhecida por oferecer uma ampla gama de produtos a preços acessíveis e por sua presença em muitas comunidades locais na Europa.
 
-**Observação:** 
-* Este é um projeto fictício, com o objetivo de desenvolver e demonstrar conhecimento nos estudos de Machine Learning, especificamente na criação de modelo de previsão de vendas.
+### 2.2. Por que é importante para o negócio?
+#### **Desafio**
+Atualmente, os gerentes das lojas da Rossmann têm a tarefa de prever suas vendas diárias com até seis semanas de antecedência. As vendas das lojas são influenciadas por muitos fatores, incluindo promoções, concorrência, feriados escolares e estaduais, sazonalidade e localização. Com milhares de gerentes individuais prevendo vendas com base em suas circunstâncias únicas, a precisão dos resultados pode variar bastante.
 
-## 2. Contato
-- paulawehdorn@gmail.com
-- [Portfólio](https://paulawehdorn.github.io/portfolio_projetos/)
-- [LinkedIn](https://www.linkedin.com/in/paulawehdorn/)
+#### **Objetivo**
+Com o intuito de reformar as lojas Rossmann, o CFO precisa da previsão de vendas diárias das próximas seis semanas para investir parte do lucro no orçamento destinado às reformas.
 
-## 3. Tecnologias Utilizadas
+### 2.3. Como vamos trabalhar?
+O objetivo deste projeto é gerar o maior valor possível no menor espaço de tempo, seguindo o Princípio de Pareto. Para isso, faremos entregas em ciclos, sempre priorizando o que gera maior percepção de valor para o cliente, utilizando a Metodologia Agile. Seguiremos o método CRISP-DM para organizar as etapas do projeto, pois ele nos ajuda a desde a definição do problema até a implementação da solução.
+
+**Fonte de dados:**
+
+Utilizaremos dados públicos, disponíveis [aqui](https://www.kaggle.com/c/rossmann-store-sales).
+
+### 2.4. O que vamos entregar?
+A principal demanda do CFO é obter o valor total de vendas para as próximas seis semanas. Portanto, neste ciclo entregaremos os valores totais e, no próximo ciclo, forneceremos as previsões de vendas por loja.
+
+## 3. Conclusões
+O modelo com melhor performance foi o XGBoost Classifier, que entregou o seguinte resultado:
+
+![image](https://github.com/paulawehdorn/rossmann_store_sales_prediction/assets/37786319/3906321e-3403-4d32-8df2-4080e5e048f8)
+
+Ou seja, para as próximas 6 semanas, as 1.115 lojas da Rossmann irão faturar aproximadamente R$285 milhões, com um erro de 13,5%. Sendo que a arrecadação total prevista para o pior cenário é de R$ 283.453.104,21 e para o melhor cenário é de R$ 284.978.623,45.
+
+## 4. Próximos passos
+- Criar um modelo em produção que forneça a previsão de vendas das próximas seis semanas de apenas uma loja específica, conforme seja solicitado pelo usuário.
+
+## 5. Tecnologias Utilizadas
 - Python, Pandas, Numpy, Matplotlib, Seaborn, Scikit-Learn;
 - Jupyter Notebook;
 - XGBoost Classifier;
 - Pickle, BorutaPy, Scipy;
 - CRISP-DM;
 - Git e Github.
-
-## 4. Atributos
-ATRIBUTO | DESCRIÇÃO 
--- | -- 
-store | um ID único para cada loja
-store_type | 4 modelos de lojas diferentes
-assortment | descreve um nível de sortimento / variedade
-competition_distance | distância em metros até a loja concorrente mais próxima
-competition_open_since_month | o mês aproximado da hora em que o concorrente mais próximo foi aberto
-competition_open_since_year | o ano aproximado da hora em que o concorrente mais próximo foi aberto
-promo2 | uma promoção contínua e consecutiva para algumas lojas
-promo2_since_week | descreve a semana do calendário em que a loja começou a participar do Promo2
-promo2_since_year | descreve o ano em que a loja começou a participar do Promo2
-promo_interval | descreve os intervalos consecutivos em que o Promo2 é iniciado, nomeando os meses em que a promoção é iniciada novamente.
-day_of_week | dia da semana
-date | data de venda
-sales | o volume de negócios para um determinado dia
-customers | o número de clientes em um determinado dia
-open | um indicador para saber se a loja estava aberta
-promo | indica se uma loja está realizando uma promoção naquele dia
-state_holiday | indica um feriado estadual.
-school_holiday | indica se a loja foi afetada pelo fechamento das escolas públicas
-
-## 5. Planejamento da Solução <a id="planejamento-da-solução"></a>
-
-Utilizaremos o método CRISP-DM, pois ele ajuda a organizar as etapas do projeto desde a definição do problema até a implementação da solução.
-
-#### As 6 fases principais do CRISP-DM são: 
-
-1. Entendimento do problema;
-2. Entendimento dos dados;
-3. Preparação dos dados;
-4. Modelagem;
-5. Avaliação do modelo;
-6. Deploy.
-
-#### Dentro do projeto, vamos quebrá-las em 9 passos:
-
-1. Passo 01: Descrição dos dados;
-2. Passo 02: Feature engineering;
-3. Passo 03: Filtragem de variáveis;
-4. Passo 04: Análise exploratória de dados (EDA);
-5. Passo 05: Preparação dos dados;
-6. Passo 06: Seleção de variáveis;
-7. Passo 07: Modelagem de Machine Learning;
-8. Passo 08: Hyperparameter fine tuning;
-9. Passo 09: Error translation and interpretation.
-
-## 6. Performance do Modelo
-
-## 7. Deploy do Modelo
-
-## 8. Impacto Financeiro
-
-## 9. Conclusão
-
-## 10. Possíveis Melhorias
