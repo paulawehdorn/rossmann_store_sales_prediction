@@ -26,11 +26,14 @@ Utilizaremos dados públicos, disponíveis [aqui](https://www.kaggle.com/c/rossm
 A principal demanda do CFO é obter o valor total de vendas para as próximas seis semanas. Portanto, neste ciclo entregaremos os valores totais e, no próximo ciclo, forneceremos as previsões de vendas por loja.
 
 ## 3. Conclusões
-O modelo com melhor performance foi o XGBoost Classifier, que entregou o seguinte resultado:
+
+ Cinco modelos de aprendizado de máquina foram testados e o XGBoost Regressor foi o modelo que apresentou o melhor desempenho geral.
+
+![image](https://github.com/paulawehdorn/rossmann_store_sales_prediction/assets/37786319/ce0e526d-0cf4-4717-ac33-4f9236c6406f)
+
+O modelo final previu que as vendas totais das 1.115 lojas da Rossmann serão de aproximadamente R$ 284 milhões, com um erro médio absoluto de 10%. Sendo que a arrecadação total prevista para o pior cenário é de R$ 283.453.104,21 e para o melhor cenário é de R$ 284.978.623,45.
 
 ![image](https://github.com/paulawehdorn/rossmann_store_sales_prediction/assets/37786319/3906321e-3403-4d32-8df2-4080e5e048f8)
-
-Ou seja, para as próximas 6 semanas, as 1.115 lojas da Rossmann irão faturar aproximadamente R$285 milhões, com um erro de 13,5%. Sendo que a arrecadação total prevista para o pior cenário é de R$ 283.453.104,21 e para o melhor cenário é de R$ 284.978.623,45.
 
 ## 4. Próximos passos
 - Criar um modelo em produção que forneça a previsão de vendas das próximas seis semanas de apenas uma loja específica, conforme seja solicitado pelo usuário.
@@ -38,7 +41,7 @@ Ou seja, para as próximas 6 semanas, as 1.115 lojas da Rossmann irão faturar a
 ## 5. Tecnologias Utilizadas
 - Python, Pandas, Numpy, Matplotlib, Seaborn, Scikit-Learn;
 - Jupyter Notebook;
-- XGBoost Classifier;
+- XGBoost Regressor;
 - Pickle, BorutaPy, Scipy;
 - CRISP-DM;
 - Git e Github.
